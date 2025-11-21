@@ -1,3 +1,6 @@
+"use client";
+
+import { AudioPlayer } from "@/components/AudioPlayer";
 import { Button } from "@/components/Button";
 import { Filter } from "lucide-react";
 
@@ -84,7 +87,12 @@ export default function History() {
             </div>
 
             <div className="mt-auto pt-6">
-              <div></div>
+              <AudioPlayer
+                isPlaying={false}
+                progress={0}
+                duration={session.duration}
+                onToggle={() => {}}
+              />
             </div>
           </div>
         ))}

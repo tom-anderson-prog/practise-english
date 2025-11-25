@@ -29,7 +29,7 @@ export default function Home() {
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
-            <Link href="/app/practice">
+            <Link href="/practice">
               <Button className="h-14 px-10 text-lg rounded-full shadow-xl shadow-primary/20 hover:shadow-primary/40">
                 Start Practice
               </Button>

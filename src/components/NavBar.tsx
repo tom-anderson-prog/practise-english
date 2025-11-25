@@ -55,7 +55,7 @@ export const NavBar = () => {
 
           {isLoggedIn ? (
             <Link
-              href="/app/profile"
+              href="/profile"
               className="flex items-center gap-3 pl-4 border-l border-gray-200 dark:border-gray-700">
               <div className="text-right hidden sm:block">
                 <p className="text-sm font-bold leading-none">Tommy Anderson</p>
@@ -63,7 +63,10 @@ export const NavBar = () => {
               </div>
               <div
                 className="size-10 rounded-full bg-gray-200 bg-cover bg-center ring-2 ring-white dark:ring-gray-800"
-                style={{ backgroundImage: "url('https://picsum.photos/seed/alex/200/200')" }}
+                style={{
+                  backgroundImage:
+                    "url('https://picsum.photos/seed/alex/200/200')",
+                }}
               />
             </Link>
           ) : (
